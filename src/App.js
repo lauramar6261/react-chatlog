@@ -14,7 +14,7 @@ const data = [
 class App extends Component {
   render() {
     console.log(chatMessages);
-    const statusComponents = data.map((status) => {
+    const statusComponents = chatMessages.map((status) => {
             return < Message
             sender={status.sender}
             body={status.body}
