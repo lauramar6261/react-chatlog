@@ -11,10 +11,10 @@ const Message = (props) => {
 
   return (
     <div className="chat-entry local">
+    <p className="entry-name">{sender}</p>
       <article className="entry-bubble">
-      <span className="entry-name">{sender}</span>
-      <span className="entry-body">{body}</span>
-      <span className="entry-time">{timeStamp}</span>
+      <p className="entry-body">{body}</p>
+      <p className="entry-time">{timeStamp}</p>
       </article>
     </div>
   );
