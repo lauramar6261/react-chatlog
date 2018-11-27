@@ -11,9 +11,11 @@ const Message = (props) => {
 
   return (
     <div className="chat-entry local">
-      <span>{sender}</span>
-      <span>{body}</span>
-      <span>{timeStamp}</span>
+      <article className="entry-bubble">
+      <span className="entry-name">{sender}</span>
+      <span className="entry-body">{body}</span>
+      <span className="entry-time">{timeStamp}</span>
+      </article>
     </div>
   );
 };
